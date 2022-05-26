@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./style..css">
+    <title>Form</title>
+</head>
+<body>
+
+    <div class="info">
+        <!-- My perosnal information -->
+        <p>Name : Pursottam Sah  </p>
+        <p>College : NIT Arunachal Pradesh</p>
+        <p>Task : Pre-Internship Test</p>
+        <p>Portfolio : <a href="https://pursottam6003.github.io/Portfolio/">Personal Portfolio</a></p>
+        <p>Github : <a href="https://github.com/Pursottam6003">My Github Account</a> </p>
+        <p>Linkedin : <a href="https://www.linkedin.com/in/pursottam-sah-78aa4a1bb/">Linkedin</a></p>
+        <p>Recent Projects on Web Developments :
+            <a href="https://pursottam6003.github.io/TypingGame/">Typing Game</a>
+            <a href="https://pursottam6003.github.io/project-internship/">Calculator</a>
+            <a href="https://github.com/Pursottam6003/MyTodoList">To-do-list</a>
+        </p>
+        <p>Company : everlytics</p>
+    </div>
+    <div class="outer">
+        <form action="" class="myform">
+            <div class="q">
+                <label for="src">Select your source: </label>
+                <div class="vr"></div>
+                <input type="file" name="upload" id="file-select">
+                <span id="upload-span" style="text-align: right;">Google Cloud Storage</span>
+            </div>
+            <div class="q">
+                <label for="pipeline-name">Provide name for pipeline: </label>
+                <div class="vr"></div>
+                <input type="text" placeholder="e.g. cust_shot_energy_gateway001" required pattern="[A-Za-z0-9_.]{5,}">
+            </div>
+            <div class="q">
+                <label for="project-name">GCS project name: </label>
+                <div class="vr"></div>
+                <input type="text" placeholder="projet-id" required pattern="[A-Za-z0-9_.]{5,}">
+            </div>
+            <div class="q">
+                <label for="bucket-name">GCS bucket name: </label>
+                <div class="vr"></div>
+                <input type="text" placeholder="gs://your-bucket" required pattern="[A-Za-z0-9_.]{5,}">
+            </div>
+            <div class="q">
+                <label for="inp-storage-files">Input Cloud Storage File(s): </label>
+                <div class="vr"></div>
+                <input type="text" placeholder="GCS location of your files" required pattern="[A-Za-z0-9_.]{5,}">
+            </div>
+            <div class="q eg">
+                <label for="none"></label>
+                <div></div>
+                <span>Example<br>gs://your-bucket/your-files/01.csv</span>
+            </div>
+            <div class="q">
+                <label for="cred">GCS credentials: </label>
+                <div class="vr"></div>
+                <input type="text" required pattern="[A-Za-z0-9_.]{5,}">
+            </div>
+            <div class="q">
+                <label for="run">Run Every: </label>
+                <div class="vr"></div>
+                <input type="number" placeholder="(in minutes)" min="0" max="999">
+            </div>
+
+            <div class="q">
+                <button type="submit">Create</button>
+                <div></div>
+                <button>Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

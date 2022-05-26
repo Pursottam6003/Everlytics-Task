@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.info
+{
+    font-size: medium;
+    margin-left: 30%;
+}
+.info a
+{
+    text-decoration: none;
+}
+div.outer {
+    width: 80%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 2px solid black;
+}
+
+div.q {
+    display: flex;
+    gap: 0.5rem;
+    margin: 0 0 2rem 0;
+    align-items: center;
+    justify-content: right;
+}
+
+div.vr {
+    background-color: black;
+    width: 2px;
+    height: 2.5rem;
+}
+
+div.q > input {
+    padding: 0.375rem;
+    border: transparent;
+    background-color: #f3f3f3;
+    height: 2.5rem;
+    line-height: 2rem;
+    flex: auto 0 1;
+}
+
+div.q > :last-child {
+    width: 15rem;
+}
+
+div.q > button {
+    height: 2.5rem;
+    min-width: 12rem;
+    background-color: #6FA8DC;
+    border: 1px transparent;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+div.q > button:hover {
+    background-color: #6b9ac5;
+}
+
+div.q > button:active {
+    background-color: #3c6d9b;
+    color: #fff;
+}
+
+form.myform {
+    width: fit-content;
+    margin: auto;
+}
+
+div.q > label {
+    color: rgb(49, 49, 49);
+    font-weight: bold;
+}
+
+.myform input[type="file"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    float:right;
+}
+
+#upload-span:hover {
+    text-decoration: underline;
+}
+
+div.q:nth-child(5) {
+    margin-bottom: 0;
+}
+
+div.eg {
+    margin: 0.3rem 0;
+    font-size: 0.8rem;
+    color: #757575;
+}
+
+div.q:nth-child(7) > input {
+    background-color: #cccccc;
+}
